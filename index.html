@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Radar de Ofertas — Grupo Exclusivo no WhatsApp</title>
+  <meta name="description" content="Entre no maior grupo de ofertas do WhatsApp. Receba promoções relâmpago, cupons exclusivos e descontos incríveis todo dia — de graça.">
+  <meta property="og:title" content="Radar de Ofertas — Grupo Exclusivo no WhatsApp">
+  <meta property="og:description" content="Entre e economize até R$890 por mês com as melhores ofertas do Brasil.">
+  <meta property="og:image" content="LOGO.png">
+  <link rel="icon" type="image/png" href="LOGO.png">
+  <!-- ================================================
+       GOOGLE ANALYTICS 4
+       Substitua SEU_GA4_ID pelo seu ID (ex: G-XXXXXXXXXX)
+       Crie em: analytics.google.com
+  ================================================ -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=SEU_GA4_ID"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'SEU_GA4_ID');
+  </script>
+
+  <!-- ================================================
+       META PIXEL (Facebook / Instagram Ads)
+       Substitua SEU_PIXEL_ID pelo seu ID numérico
+       Crie em: business.facebook.com → Gerenciador de Eventos
+  ================================================ -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', 'SEU_PIXEL_ID');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"/>
+  </noscript>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --yellow: #f0c830;
+      --green-wpp: #25D366;
+      --bg: #0a0a0a;
+      --bg-2: #111111;
+      --bg-3: #161616;
+      --border: #1f1f1f;
+      --border-2: #2a2a2a;
+      --text: #f2f2ee;
+      --text-muted: #888880;
+      --text-dim: #4e4e4a;
+      --font: 'Plus Jakarta Sans', sans-serif;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); min-height: 100vh; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+    /* TOPBAR */
+    .topbar { position: sticky; top: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 13px 32px; background: rgba(10,10,10,0.94); backdrop-filter: blur(14px); border-bottom: 1px solid var(--border); }
+    .logo-wrap { display: flex; align-items: center; gap: 10px; }
+    .logo-wrap img { width: 38px; height: 38px; object-fit: contain; }
+    .logo-name { font-size: 16px; font-weight: 700; letter-spacing: -.01em; }
+    .logo-name span { color: var(--yellow); }
+    .topbar-cta { display: inline-flex; align-items: center; gap: 7px; background: var(--green-wpp); color: #000; font-family: var(--font); font-weight: 700; font-size: 13px; padding: 9px 20px; border-radius: 100px; text-decoration: none; transition: opacity .15s; }
+    .topbar-cta:hover { opacity: .88; }
+    .topbar-cta svg { width: 15px; height: 15px; }
+
+    /* HERO */
+    .hero-wrap { max-width: 1100px; margin: 0 auto; padding: 64px 32px 56px; display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .hero-left { animation: fadeUp .55s ease both; }
+    .hero-right { animation: fadeUp .55s .15s ease both; }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+
+    .badge { display: inline-flex; align-items: center; gap: 7px; background: var(--bg-2); border: 1px solid var(--border-2); border-radius: 100px; padding: 6px 14px; font-size: 11px; font-weight: 500; color: #888; letter-spacing: .06em; text-transform: uppercase; margin-bottom: 22px; }
+    .badge-dot { width: 7px; height: 7px; border-radius: 50%; background: #22c55e; box-shadow: 0 0 7px #22c55e88; animation: pulse 2s infinite; }
+    @keyframes pulse { 0%,100% { opacity:1; transform:scale(1); } 50% { opacity:.4; transform:scale(.85); } }
+
+    .hero-left h1 { font-size: clamp(28px, 3.2vw, 44px); font-weight: 800; line-height: 1.1; letter-spacing: -.025em; margin-bottom: 16px; }
+    .hero-left h1 em { color: var(--yellow); font-style: normal; }
+    .hero-left p { font-size: 15px; line-height: 1.7; color: var(--text-muted); margin-bottom: 36px; }
+
+    /* CTA HERO — centralizado e grande */
+    .cta-wrap { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 12px; }
+    .cta-main { display: inline-flex; align-items: center; justify-content: center; gap: 12px; background: var(--green-wpp); color: #000; font-family: var(--font); font-weight: 700; font-size: 18px; padding: 20px 44px; border-radius: 100px; text-decoration: none; transition: transform .15s, box-shadow .15s; box-shadow: 0 0 40px #25D36640; width: 100%; max-width: 420px; }
+    .cta-main:hover { transform: scale(1.03); box-shadow: 0 0 60px #25D36660; }
+    .cta-main svg { width: 24px; height: 24px; flex-shrink: 0; }
+    .urgency { font-size: 13px; color: var(--text-dim); }
+    .urgency strong { color: var(--yellow); }
+
+    /* STATS CARD */
+    .stats-card { background: var(--bg-2); border: 1px solid var(--border); border-radius: 20px; padding: 28px; display: flex; flex-direction: column; }
+    .stat-row { display: flex; align-items: center; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--border); }
+    .stat-row:first-child { padding-top: 0; }
+    .stat-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .stat-icon { width: 44px; height: 44px; border-radius: 12px; background: var(--bg-3); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 20px; flex-shrink: 0; }
+    .stat-num { font-size: 22px; font-weight: 800; color: var(--yellow); line-height: 1; }
+    .stat-label { font-size: 12px; color: var(--text-dim); margin-top: 3px; }
+
+    .divider { height: 1px; background: linear-gradient(90deg, transparent, var(--border), transparent); margin: 0 32px; }
+
+    /* PARTNERS */
+    .partners { padding: 36px 32px; max-width: 1100px; margin: 0 auto; text-align: center; }
+    .section-label { font-size: 11px; font-weight: 500; color: var(--text-dim); text-transform: uppercase; letter-spacing: .1em; margin-bottom: 28px; }
+    .partner-grid { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 48px; }
+    .partner-grid img { height: 48px; width: auto; max-width: 150px; object-fit: contain; opacity: .7; transition: opacity .2s; }
+    .partner-grid img:hover { opacity: 1; }
+    .partner-grid img.on-dark { filter: brightness(0) invert(1); }
+
+    /* BENEFITS */
+    .benefits { padding: 20px 32px 40px; max-width: 1100px; margin: 0 auto; }
+    .section-title { font-size: 18px; font-weight: 700; margin-bottom: 18px; }
+    .benefit-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .benefit-card { background: var(--bg-2); border: 1px solid var(--border); border-radius: 14px; padding: 20px; display: flex; gap: 14px; align-items: flex-start; }
+    .benefit-icon { width: 40px; height: 40px; border-radius: 10px; background: var(--bg-3); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 18px; }
+    .benefit-text h3 { font-size: 14px; font-weight: 600; color: #e0e0d8; margin-bottom: 4px; }
+    .benefit-text p { font-size: 13px; color: var(--text-dim); line-height: 1.55; }
+
+    /* TESTIMONIALS */
+    .social-proof { padding: 0 32px 44px; max-width: 1100px; margin: 0 auto; }
+    .t-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .testimonial { background: var(--bg-2); border: 1px solid var(--border); border-radius: 16px; padding: 20px; }
+    .t-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .avatar { width: 36px; height: 36px; border-radius: 50%; background: var(--bg-3); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 15px; flex-shrink: 0; }
+    .t-author { font-size: 13px; font-weight: 600; color: #ddd; }
+    .t-sub { font-size: 11px; color: #444; margin-top: 1px; }
+    .stars { color: var(--yellow); font-size: 12px; letter-spacing: 1px; margin-left: auto; }
+    .testimonial p { font-size: 13px; color: #777; line-height: 1.65; }
+
+    /* CTA BOTTOM */
+    .cta-bottom { padding: 40px 32px 64px; text-align: center; max-width: 640px; margin: 0 auto; }
+    .counter { display: inline-flex; align-items: center; gap: 8px; background: var(--bg-2); border: 1px solid var(--border); border-radius: 10px; padding: 9px 18px; font-size: 13px; color: var(--text-dim); margin-bottom: 28px; }
+    .counter strong { color: var(--text); }
+    .counter-dot { width: 7px; height: 7px; border-radius: 50%; background: #f87171; flex-shrink: 0; animation: pulse 1.5s infinite; }
+    .cta-bottom h2 { font-size: 28px; font-weight: 800; margin-bottom: 10px; }
+    .cta-bottom > p { font-size: 15px; color: var(--text-dim); margin-bottom: 28px; }
+    .cta-bottom .cta-main { font-size: 19px; padding: 22px 48px; max-width: 460px; }
+
+    footer { text-align: center; padding: 20px 24px 36px; font-size: 11px; color: #333; border-top: 1px solid var(--bg-3); line-height: 1.9; }
+
+    @media (max-width: 768px) {
+      .hero-wrap { grid-template-columns: 1fr; gap: 28px; padding: 36px 20px 32px; }
+      .hero-left h1 { font-size: 28px; }
+      .cta-main { font-size: 17px; padding: 18px 32px; }
+      .benefit-grid { grid-template-columns: 1fr; }
+      .t-grid { grid-template-columns: 1fr; }
+      .benefits, .social-proof, .partners { padding-left: 20px; padding-right: 20px; }
+      .topbar { padding: 12px 20px; }
+      .divider { margin: 0 20px; }
+      .cta-bottom { padding: 32px 20px 52px; }
+      .partner-grid { gap: 28px; }
+      .partner-grid img { height: 36px; }
+    }
+    @media (max-width: 420px) {
+      .topbar-cta span { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo-wrap">
+      <img src="LOGO.png" alt="Radar de Ofertas">
+      <div class="logo-name"><span>Radar</span> de Ofertas</div>
+    </div>
+    <a class="topbar-cta" href="https://chat.whatsapp.com/Ic3r7WEmgNqAVFpA4CrQ12" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.528 5.845L.057 23.543l5.85-1.533A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.058-1.401l-.361-.215-3.474.91.928-3.387-.237-.376A9.818 9.818 0 1112 21.818z"/></svg>
+      <span>Entrar agora</span>
+    </a>
+  </header>
+
+  <section class="hero-wrap">
+    <div class="hero-left">
+      <div class="badge"><span class="badge-dot"></span>grupo exclusivo · vagas limitadas</div>
+      <h1>O radar que detecta as <em>melhores ofertas</em> antes de todo mundo</h1>
+      <p>Entre no grupo do WhatsApp e receba promoções relâmpago, cupons exclusivos e descontos incríveis direto no seu celular — todo dia, de graça.</p>
+      <div class="cta-wrap">
+        <a class="cta-main" href="https://chat.whatsapp.com/Ic3r7WEmgNqAVFpA4CrQ12" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.528 5.845L.057 23.543l5.85-1.533A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.058-1.401l-.361-.215-3.474.91.928-3.387-.237-.376A9.818 9.818 0 1112 21.818z"/></svg>
+          Entrar no Grupo Agora
+        </a>
+        <div class="urgency">Apenas <strong id="spots">23 vagas</strong> restantes hoje</div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="stats-card">
+        <div class="stat-row">
+          <div class="stat-icon">👥</div>
+          <div><div class="stat-num">47k+</div><div class="stat-label">membros ativos no grupo</div></div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-icon">💰</div>
+          <div><div class="stat-num">R$890</div><div class="stat-label">economia média por mês</div></div>
+        </div>
+        <div class="stat-row">
+          <div class="stat-icon">⚡</div>
+          <div><div class="stat-num">80+</div><div class="stat-label">promoções enviadas por dia</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="partners">
+    <div class="section-label">parceiros oficiais · ofertas verificadas</div>
+    <div class="partner-grid">
+      <img src="ml_logo.png"       alt="Mercado Livre">
+      <img src="amazon_logo.png"   alt="Amazon"        class="on-dark">
+      <img src="nike_logo.png"     alt="Nike"          class="on-dark">
+      <img src="netshoes_logo.png" alt="Netshoes"      class="on-dark">
+      <img src="adidas_logo.png"   alt="Adidas">
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="benefits" style="padding-top:36px">
+    <div class="section-title">O que você recebe no grupo</div>
+    <div class="benefit-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">⚡</div>
+        <div class="benefit-text"><h3>Ofertas relâmpago em primeira mão</h3><p>Você recebe antes de todo mundo, antes de esgotar no site.</p></div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🏷️</div>
+        <div class="benefit-text"><h3>Cupons exclusivos e cashback</h3><p>Cupons que não aparecem nos sites. Só pra quem é do grupo.</p></div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🤖</div>
+        <div class="benefit-text"><h3>Bot inteligente 24 horas</h3><p>As melhores ofertas filtradas automaticamente, sem spam.</p></div>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">📦</div>
+        <div class="benefit-text"><h3>Todas as categorias</h3><p>Eletrônicos, mercado, moda, casa, viagem e muito mais.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider" style="margin-top:8px"></div>
+
+  <section class="social-proof" style="padding-top:36px">
+    <div class="section-title">Quem já está no grupo diz</div>
+    <div class="t-grid">
+      <div class="testimonial">
+        <div class="t-header">
+          <div class="avatar">👩</div>
+          <div><div class="t-author">Ana Paula S.</div><div class="t-sub">São Paulo · 4 meses</div></div>
+          <div class="stars">★★★★★</div>
+        </div>
+        <p>"Economizei mais de R$600 só no mês passado. O bot chega antes de esgotar, é incrível."</p>
+      </div>
+      <div class="testimonial">
+        <div class="t-header">
+          <div class="avatar">👨</div>
+          <div><div class="t-author">Rodrigo M.</div><div class="t-sub">Curitiba · 7 meses</div></div>
+          <div class="stars">★★★★★</div>
+        </div>
+        <p>"TV, tênis e notebook tudo pela metade do preço. Indiquei pra família inteira."</p>
+      </div>
+      <div class="testimonial">
+        <div class="t-header">
+          <div class="avatar">👩</div>
+          <div><div class="t-author">Fernanda C.</div><div class="t-sub">Belo Horizonte · 2 meses</div></div>
+          <div class="stars">★★★★★</div>
+        </div>
+        <p>"Primeiro achei que era spam, mas as ofertas são reais. Já virei fã do Radar!"</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section class="cta-bottom">
+    <div class="counter">
+      <span class="counter-dot"></span>
+      <strong id="online">138 pessoas</strong>&nbsp;visualizando agora
+    </div>
+    <h2>Não fique de fora</h2>
+    <p>As vagas se esgotam rápido. Entre gratuitamente agora.</p>
+    <div class="cta-wrap">
+      <a class="cta-main" href="https://chat.whatsapp.com/Ic3r7WEmgNqAVFpA4CrQ12" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.124.554 4.118 1.528 5.845L.057 23.543l5.85-1.533A11.954 11.954 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.058-1.401l-.361-.215-3.474.91.928-3.387-.237-.376A9.818 9.818 0 1112 21.818z"/></svg>
+        Quero Entrar Grátis Agora
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Radar de Ofertas · Grupo gratuito no WhatsApp<br>
+    Ao entrar, você aceita receber ofertas e promoções. Sem spam. Saia quando quiser.
+  </footer>
+
+  <script>
+    // ── Contadores dinâmicos ──
+    let spots = 23;
+    setInterval(() => {
+      if (Math.random() < 0.3 && spots > 8) { spots--; document.getElementById('spots').textContent = spots + ' vagas'; }
+    }, 9000);
+    let online = 138;
+    setInterval(() => {
+      online += Math.floor(Math.random() * 5) - 2;
+      online = Math.max(110, Math.min(195, online));
+      document.getElementById('online').textContent = online + ' pessoas';
+    }, 4500);
+
+    // ── Evento de conversão — dispara ao clicar em qualquer botão CTA ──
+    // Registra no Meta Pixel como "Lead" e no GA4 como "join_group"
+    document.querySelectorAll('a.cta-main, a.topbar-cta').forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Meta Pixel
+        if (typeof fbq !== 'undefined') {
+          fbq('track', 'Lead');
+        }
+        // Google Analytics 4
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'join_group', {
+            event_category: 'CTA',
+            event_label: 'whatsapp_group'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
